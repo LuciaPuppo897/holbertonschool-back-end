@@ -2,7 +2,6 @@
 """
     task 1 export to CSV.
 """
-
 import cvs
 import requests
 from sys import argv

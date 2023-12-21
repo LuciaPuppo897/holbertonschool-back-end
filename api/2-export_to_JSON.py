@@ -2,7 +2,6 @@
 """
     task 2 export to Json.
 """
-
 import json
 import requests
 from sys import argv

@@ -2,8 +2,6 @@
 """
     Task 0 api getter.
 """
-
-
 import requests
 from sys import argv
 

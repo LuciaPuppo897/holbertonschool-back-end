@@ -20,7 +20,7 @@ user_task = requests.get(api_url + f'users/{user_id}/todos').json()
 user_completed_task = [task for task in user_task if task['completed']]
 
 
-with open(user_id, 'w', newline='') as csv_file:
+with open(f'{user_id}.cvs', 'w', newline='') as csv_file:
     writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
     for task in user_task:
         writer.writerow([user_id,

@@ -6,8 +6,8 @@ import requests
 from sys import argv
 
 if __name__ == '__main__':
-    """ 
-        api function 
+    """
+        api function
     """
 
     api_url = f'https://jsonplaceholder.typicode.com/'
@@ -18,11 +18,11 @@ if __name__ == '__main__':
     completed_task = [task for task in task_todo if task['completed']]
 
 
-    with open(f'{user_id}.cvs', 'w', newline='') as csv_file:
-        writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
-        for task in task_todo:
-            writer.writerow([user_id,
-                            user_data['username'],
-                            task['completed'],
-                            task['title'],
-                            ])
+with open(f'{user_id}.cvs', 'w', newline='') as csv_file:
+    writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+    for task in task_todo:
+        writer.writerow([user_id,
+                        user_data['username'],
+                        task['completed'],
+                        task['title'],
+                         ])

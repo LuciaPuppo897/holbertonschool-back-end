@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    task 2 export to Json.
+    task 2 export the date to Json.
 """
 import json
 import requests

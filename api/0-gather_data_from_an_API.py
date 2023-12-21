@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-    Task 0 api getter.
+    Task 0  function to gather the data from API
 """
 import requests
 from sys import argv
 
 if __name__ == '__main__':
     """ 
-        api function 
+        main api function of the program
     """
 
 api_url = f'https://jsonplaceholder.typicode.com/'

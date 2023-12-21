@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    task 1 export to CSV.
+    task 1 export in CSV format.
 """
 import cvs
 import requests

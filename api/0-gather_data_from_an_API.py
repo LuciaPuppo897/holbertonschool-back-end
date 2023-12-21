@@ -6,7 +6,7 @@ import requests
 from sys import argv
 
 if __name__ == '__main__':
-    """ """
+    """ api function """
 
 api_url = f'https://jsonplaceholder.typicode.com/'
 

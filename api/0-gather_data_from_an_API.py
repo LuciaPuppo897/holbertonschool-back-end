@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Task 0  function to gather the data from API
+    function to gather the data from API
 """
 
 import requests

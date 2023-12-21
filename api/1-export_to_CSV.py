@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    task 1 export in CSV format.
+    exports data in CSV format.
 """
 
 import csv

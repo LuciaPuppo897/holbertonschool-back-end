@@ -15,11 +15,11 @@ api_url = f'https://jsonplaceholder.typicode.com/'
 
 user_id = (argv[1])
 user_data = requests.get(api_url + f'users/{user_id}').json()
-user_task = requests.get(api_url + f'users/{user_id}/todos').json()
-user_completed_task = [task for task in user_task if task['completed']]
+task_todo = requests.get(api_url + f'users/{user_id}/todos').json()
+completed_task = [task for task in task_todo if task['completed']]
 
 print(f'Employee {user_data["name"]} is done with', end='')
-print(f' task({len(user_completed_task)}/{len(user_task)}):')
+print(f' task({len(completed_task)}/{len(task_todo)}):')
 
-for tasks in user_completed_task:
+for tasks in completed_task:
     print("\t" + tasks["title"])

@@ -1,15 +1,12 @@
 #!/usr/bin/python3
-"""
-    function to gather the data from API
-"""
+"""  function to gather the data from API """
 
 import requests
 from sys import argv
 
+
 if __name__ == '__main__':
-    """ 
-        main api function of the program
-    """
+    """ main api function of the program """
 
 api_url = f'https://jsonplaceholder.typicode.com/'
 

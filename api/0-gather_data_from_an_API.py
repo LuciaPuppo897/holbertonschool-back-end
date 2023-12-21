@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  function to gather the data from API """
+"""function to gather the data from API"""
 
 import requests
 from sys import argv

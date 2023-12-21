@@ -2,6 +2,7 @@
 """
     Task 0  function to gather the data from API
 """
+
 import requests
 from sys import argv
 

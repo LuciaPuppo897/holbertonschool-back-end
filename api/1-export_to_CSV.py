@@ -1,13 +1,17 @@
 #!/usr/bin/python3
 """
-task 1 export to CSV
+task 1 export to CSV.
 """
+
+
 import cvs
 import requests
 from sys import argv
 
 if __name__ == '__main__':
-    """ api function """
+    """ 
+        api function 
+    """
 
 api_url = f'https://jsonplaceholder.typicode.com/'
 

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" exports data in CSV format """
+""" Script to get data from an API """
 
 import csv
 import requests
@@ -15,7 +15,6 @@ if __name__ == '__main__':
     user_id = (argv[1])
     user_data = requests.get(api_url + f'users/{user_id}').json()
     task_todo = requests.get(api_url + f'users/{user_id}/todos').json()
-    completed_task = [task for task in task_todo if task['completed']]
 
 
 with open(f'{user_id}.cvs', 'w', newline='') as csv_file:
